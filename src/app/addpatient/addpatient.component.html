@@ -1,0 +1,33 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3 mt-4">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center text-primary">
+                    <h2>PATIENT ADD</h2>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label"><h5>PATIENT NAME</h5></label>
+                    <input name="patientName" [(ngModel)]="patientName" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label"><h5>DOCTOR NAME</h5></label>
+                    <input name="doctorName" [(ngModel)]="doctorName" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label"><h5>DATE</h5></label>
+                    <input type="date" name="date" [(ngModel)]="date" id="" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label"><h5>PATIENT NUMBER</h5></label>
+                    <input name="patientNumber" [(ngModel)]="patientNumber" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                    <button (click)="read()" class="btn btn-success"><h4>Submit</h4></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
