@@ -1,0 +1,38 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3 mt-4">
+              <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center text-primary">
+                <h2>PATIENT VIEW</h2>
+              </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <table class="table table-dark table-striped">
+                        <thead>
+                          <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">PATIENT NAME</th>
+                            <th scope="col">PATIENT NUMBER</th>
+                            <th scope="col">DATE</th>
+                            <th scope="col">DOCTOR NAME</th>
+                          </tr>
+                        </thead>
+                    
+                        <tbody>
+                          <tr *ngFor="let i of data">
+                            <th scope="row">{{i.id}}</th>
+                            <td>{{i.patientName}}</td>
+                            <td>{{i.patientNumber}}</td>
+                            <td>{{i.date}}</td>
+                            <td>{{i.doctorName}}</td>
+                          </tr>
+                        </tbody>
+                    
+                      </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
